@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;700&display=swap')
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+p
+    font-size: 20px
+
+body
+    color: #333333
+    background: mintcream
+    font-family: 'Libre Franklin', sans-serif
+
+header
+    width: 100%
+    color: white
+    text-align: center
+
+nav
+    padding: 20px 0 0
+    display: flex
+    justify-content: center
+    ul
+        display: flex
+        gap: 30px
+        list-style: none
+        a
+            transition: 0.2s
+        a:hover
+            text-decoration: none
+            filter: brightness(150%)
+        li
+            padding: 10px 30px
+            background: maroon
+            color: white      
+
+.main-info-container
+    width: 100%
+    text-align: center
+    padding: 30px
+    color: white
+    p
+        margin-bottom: 0
+
+.word-info
+    max-width: 300px
+    margin: auto
+    p
+        text-align: center
+        width: 100%
+        padding: 0 20px
+    p:first-of-type
+        font-size: 24px
+    .word-description
+        background: #333333
+        padding: 10px 20px
+        cursor: pointer
+
+textarea, input[type="text"]
+    width: 300px
+    margin-bottom: 20px
+
+.word-list
+    margin-top: 60px
+    .word-item 
+        display: flex
+        flex-wrap: wrap
+        align-items: baseline
+        padding: 20px 0 5px
+        border-bottom: 1px solid navy
+        & > * 
+            width: 150px
+            flex-grow: 1
+            text-align: left
+
+button, input[type="submit"]
+    padding: 10px 30px
+    cursor: pointer
+    background: maroon
+    color: white
+    outline: transparent
+    border: 0px
+    &:hover
+        filter: brightness(150%)
+
+.check-form
+    margin-top: 40px
+
