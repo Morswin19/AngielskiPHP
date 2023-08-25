@@ -2,7 +2,7 @@
   require_once('config.php');
 
   // Pobieranie wartości z formularza
-  $word = strtolower($_POST['word']);
+  $word = addslashes(strtolower($_POST['word']));
   $description = strtolower($_POST['description']);
   // $repeats = $_POST['repeats'];
 

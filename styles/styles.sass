@@ -13,6 +13,9 @@ body
     background: mintcream
     font-family: 'Libre Franklin', sans-serif
 
+main
+    padding-bottom: 60px
+
 header
     width: 100%
     color: white
@@ -58,9 +61,21 @@ nav
         padding: 10px 20px
         cursor: pointer
 
-textarea, input[type="text"]
-    width: 300px
-    margin-bottom: 20px
+.new-word-form
+    label
+        width: 300px
+        margin: auto
+        display: block
+        text-align: left
+    textarea, input[type="text"]
+        width: 300px
+        margin-top: 5px
+        margin-bottom: 20px
+        padding: 10px 10px
+        border: 1px solid crimson
+        font-size: 20px
+        &:focus-visible
+            outline: 2px solid crimson
 
 .word-list
     margin-top: 60px
@@ -68,12 +83,15 @@ textarea, input[type="text"]
         display: flex
         flex-wrap: wrap
         align-items: baseline
-        padding: 20px 0 5px
+        padding: 15px 0 0
         border-bottom: 1px solid navy
         & > * 
             width: 150px
             flex-grow: 1
             text-align: left
+            font-size: 16px
+        p:first-of-type
+            max-width: 50px
 
 button, input[type="submit"]
     padding: 10px 30px
